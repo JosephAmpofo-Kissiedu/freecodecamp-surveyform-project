@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="surveyform_style.css">
+    <title>Freecodecamp Survey Form</title> 
+</head>
+<body>
+    
+    <!--My Version of freecodecamp survey form using Papa's Pizza-->
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Papa's Pizza Survey Form</h1>
+        <p id="description" class="description text-center">
+          Thank you for taking the time to help us improve our Services
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input type="email" name="email" id="email"  class="form-control" placeholder="Enter your Email" required>
+          </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+          <input type="number" name="age" id="number" min="10"
+            max="99" class="form-control" placeholder="Age">
+        </div>
+        <div class="form-group">
+          <p>Which option best describes your current status?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select current Status</option>
+            <option value="Employed(full-time)">Employed(full-time)</option>
+            <option value="Employed(part-time)">Employed(part-time)</option>
+            <option value="Self Employed">Self Employed</option>
+            <option value="Unemployed">Unemployed</option>
+            <option value="Student">Student</option>
+            <option value="Prefer Not Say">Prefer Not Say</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Would you recommend Papa's Pizza to a friend?</p>
+          <label>
+            <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked>Yes
+          </label>
+          
+          <label>
+            <input name="user-recommend" value="maybe" type="radio" class="input-radio">No
+          </label>
+          
+          <label>
+            <input name="user-recommend" value="not-sure" type="radio" class="input-radio">Not sure
+          </label>
+          
+        </div>
+
+        <div class="form-group">
+          <p>What is your favorite Toppings of Papa's Pizza?</p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="Pepperoni">Pepperoni</option>
+            <option value="Italian Sausage">Italian Sausage</option>
+            <option value="Steak">Steak</option>
+            <option value="Ground Beef">Ground Beef</option>
+            <option value="Chicken">Chicken</option>
+            <option value="Extra cheesef">Extra cheese</option>
+            <option value="Green Peppers">Green Peppers</option>
+            <option value="Black Olives">Black Olives</option>
+            <option value="Mild Peppers">Mild Peppers</option>
+            <option value="Jalapeno Peppers">Jalapeno Peppers</option>
+            <option value="Bacon">Bacon</option>
+            <option value="Canadian Bacon">Canadian Bacon</option>
+            <option value="Mushroomsf">Mushrooms</option>
+            <option value="Red Onions">Red Onions</option>
+            <option value="Tomatoes">Tomatoes</option>
+            <option value="Green Olives">Green Olives</option>
+            <option value="Pineaple">Pineaple</option>
+            <option value="Feta">Feta</option>
+          </select>
+        </div>
+
+        <div class="form-group-checkbox">
+          <p>
+            What would you like to see improved from our Menu?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label>
+            <input name="prefer" value="Build Your Own Pizza" type="checkbox" class="input-checkbox">Build Your Own Pizza
+          </label>
+          
+          <label>
+            <input
+              name="prefer" value="Papa's Classic Pizzas" type="checkbox" class="input-checkbox">Papa's Classic Pizzas
+          </label>
+          
+          <label>
+            <input name="prefer" value="Papa's Select Pizzas" type="checkbox" class="input-checkbox">Papa's Select Pizzas
+          </label>
+          
+          <label>
+            <input name="prefer" value="Papa's Premier Pizzas" type="checkbox" class="input-checkbox">Papa's Premier Pizzas
+          </label>
+          
+          <label>
+            <input name="prefer" value="Salads" type="checkbox" class="input-checkbox">Salads
+          </label>
+
+          <label>
+            <input name="prefer" value="Papa's Subs" type="checkbox" class="input-checkbox">Papa's Subs
+          </label>
+
+          <label>
+            <input name="prefer" value="Papa's Stix" type="checkbox" class="input-checkbox">Papa's Stix
+          </label>
+
+          <label>
+            <input name="prefer" value="Papa's Sides" type="checkbox" class="input-checkbox">Papa's Sides
+          </label>
+
+          <label>
+            <input name="prefer" value="Papa's Sweet Tooth" type="checkbox" class="input-checkbox">Papa's Sweet Tooth
+          </label>
+          
+        </div>
+
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here...">
+          </textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+    
+</body>
+</html>
